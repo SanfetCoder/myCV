@@ -1,0 +1,100 @@
+/* IMPORT A FONT FROM GOOGLE */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+
+:root{
+  --primary-color:#131086;
+  --secondary-color:#b621f3;
+}
+
+body {
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Container */
+.container {
+  position: relative;
+  background: white; 
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  margin: auto auto;
+  width: 90%;
+  height: 90%;
+  justify-content: center;
+}
+
+.container nav {
+  height: 50px; 
+}
+
+.container-stack-1 {
+  position: absolute;
+  left: 5.5%;
+  top: 5%;
+  background: #eeee; 
+  border-radius: 40px;
+  margin: auto auto;
+  width: 90%;
+  height: 90%;
+  justify-content: center;
+  z-index: -1;
+  transform: rotate(1deg);
+}
+
+.container-stack-2 {
+  position: absolute;
+  left: 6%;
+  top: 5%;
+  background: #eeeeee;
+  border-radius: 40px;
+  margin: auto auto;
+  width: 90%;
+  height: 90%;
+  justify-content: center;
+  z-index: -2;
+  transform: rotate(3deg);
+}
+
+.nav-icon {
+  color: var(--primary-color);
+  cursor: pointer;
+  position: relative;
+  left: 30px;
+  top: 30px;
+  font-size: 1.5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-icon:hover {
+  opacity: 0.5;
+}
+
+.content {
+  margin: 0 auto;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow-x: scroll;
+  padding: 2rem 1rem;
+}
+
+.prototype {
+  border: 5px solid purple;
+  border-radius: 40px;
+  cursor: pointer;
+  width: 250px;
+  height: 90%;
+  object-fit: contain;
+  transition: all 0.5s ease-in-out;
+  margin: 0 2rem;
+}
+
+.prototype:hover {
+  transform: scale(1.05);
+}
