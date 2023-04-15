@@ -179,6 +179,11 @@ body::before {
   height: 100px;
   object-fit: contain;
   overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.icon-skill:hover {
+  transform: translateY(-20px);
 }
 
 .profile-card-info {
